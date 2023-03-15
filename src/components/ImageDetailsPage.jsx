@@ -1,10 +1,12 @@
+import './ImageDetailsPage.css';
+
 function ImageDetailsPage({ selectedArtwork, setSelectedArtwork }) {
 	const clickHandler = () => {
 		setSelectedArtwork(null);
 	};
 
 	return (
-		<div>
+		<div className="image-container">
 			<button onClick={clickHandler}>Back</button>
 			<img
 				alt="artwork"

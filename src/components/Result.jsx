@@ -1,11 +1,14 @@
 function Result({ artInfo, setSelectedArtwork }) {
+	const artistName =
+		artInfo.artist_title === null ? 'unknown' : artInfo.artist_title;
+
 	const clickHandler = () => {
 		setSelectedArtwork(artInfo.image_id);
 	};
 
 	return (
 		<button onClick={clickHandler}>
-			{`${artInfo.title} by ${artInfo.artist_title}`}
+			{`${artInfo.title} by ${artistName}`}
 		</button>
 	);
 }

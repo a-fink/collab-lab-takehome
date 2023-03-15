@@ -1,8 +1,9 @@
+import './SearchResults.css';
 import Result from './Result';
 
 function SearchResults({ results, setSelectedArtwork }) {
 	return (
-		<div>
+		<div className="results-container">
 			{results.map((el) => (
 				<Result
 					key={el.id}
