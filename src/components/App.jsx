@@ -12,20 +12,12 @@ export function App() {
 	const [selectedArtwork, setSelectedArtwork] = useState(null);
 
 	function onSearchSubmit(query) {
-		// Search for the users's query.
-		// TODO: render the results, instead of logging them to the console.
-		// NOTE: `searchArtworks` currently returns local data, so that we
-		// don't make too many requests to the API! Once we've built out
-		// our UI, we need to make real requests!
-
 		// @see: ./src/uitls/api.js
 		// get results object from query and store data array in our state
 		searchArtworks(query).then((result) => setSearchResults(result.data));
 	}
 
-	// if no results will only render search bar
-	// if results and none selected will render search & results
-	// if selected, will render that with a back button
+	// conditionally render search bar, results, and image details
 	return (
 		<div className="App">
 			<h1>TCL Career Lab Art Finder</h1>
