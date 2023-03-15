@@ -1,0 +1,16 @@
+.App {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	margin: 0 auto;
+	max-width: 95%;
+	width: 100rem;
+}
+
+.App > h1 {
+	text-align: center;
+}
+
+.App > .Footer {
+	margin-top: auto;
+}

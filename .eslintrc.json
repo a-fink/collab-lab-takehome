@@ -1,0 +1,18 @@
+{
+	"extends": [
+		"plugin:jsx-a11y/recommended",
+		"prettier",
+		"react-app",
+		"react-app/jest"
+	],
+	"rules": {
+    "react/jsx-filename-extension": "error",
+		"react/jsx-sort-props": [
+			1,
+			{
+				"callbacksLast": true,
+				"reservedFirst": true
+			}
+		]
+	}
+}
