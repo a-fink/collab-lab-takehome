@@ -12,8 +12,6 @@ export function App() {
 	const [selectedArtwork, setSelectedArtwork] = useState(null);
 
 	function onSearchSubmit(query) {
-		console.log('in search submit');
-
 		// Search for the users's query.
 		// TODO: render the results, instead of logging them to the console.
 		// NOTE: `searchArtworks` currently returns local data, so that we
